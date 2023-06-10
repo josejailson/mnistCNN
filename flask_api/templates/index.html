@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MNIST CNN</title>
+    </head>
+
+    <body>
+        <h1>MNIST Handwritten Digits Prediction</h1>
+
+        <form>
+            <input type="file" name="img">
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>Prediction: <span id="result"></span></h3>
+        
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='index.js') }}"></script>
+
+    </body>
+</html>
